@@ -1,0 +1,163 @@
+/* GLOBAL SETTINGS */
+
+body {
+    font-family: "Montserrat";
+
+
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+hr {
+    width: 20%;
+    border-top: 10px solid;
+    opacity: 10;
+
+}
+
+.slide-description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-right: 450px;
+}
+
+.btn {
+    background-color: rgb(0, 9, 181);
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+}
+
+h2,
+hr,
+.slide-description {
+    color: rgb(0, 9, 181);
+}
+
+
+.logo {
+    width: 300px;
+    margin-left: 15%;
+}
+
+.navbar-nav {
+    margin-right: 7%;
+}
+
+
+/* SLIDERS*/
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhhS5O0No8J-vDP30LlJRbHeIIBSyu2abwQ&usqp=CAU);
+    opacity: 0.5;
+}
+
+.Whiteblue-overlay {
+    position: absolute;
+    left: 7%;
+    width: 1200px;
+    z-index: 1;
+    /*display: none;*/
+}
+
+.carousel-inner {
+    z-index: -1;
+    text-align: right;
+
+
+}
+
+
+.carousel-caption {
+    color: blue;
+    text-align: left;
+    padding-bottom: 200px;
+    left: 5%;
+    top: 200px;
+}
+
+.one,
+.two,
+.three {
+    z-index: 2;
+}
+
+
+.slide-photos {
+    height: 660px;
+
+}
+
+
+.carousel-indicators {
+    margin-left: 95%;
+    height: 700px;
+    flex-direction: column;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border-width: 0px;
+    margin: 10px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 760px) {
+
+    .logo {
+        width: 250px;
+        margin-left: 2%
+    }
+
+    .Whiteblue-overlay {
+        left: 1%;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+        padding-right: 0%;
+    }
+
+    .btn {
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 1.8rem;
+        font-weight: 700;
+
+    }
+
+}
+
+@media (min-width:320px) {
+
+
+
+    .Whiteblue-overlay {
+        left: 0;
+    }
+
+    .btn {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 1.8rem;
+
+    }
+
+
+
+
+}
