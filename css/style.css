@@ -64,8 +64,8 @@ hr,
 
 .Whiteblue-overlay {
     position: absolute;
-    left: 7%;
-    width: 1200px;
+    left: -1%;
+    width: 1300px;
     z-index: 1;
     /*display: none;*/
 }
@@ -116,7 +116,17 @@ hr,
 
 /* RESPONSIVENESS */
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 800;
+
+
+    }
+
+
+
 
     .logo {
         width: 250px;
@@ -124,12 +134,17 @@ hr,
     }
 
     .Whiteblue-overlay {
-        left: 1%;
+        left: -40%;
+        width: 1200px;
+
+
+
+
     }
 
     .slide-description {
-        font-size: 1rem;
-        padding-right: 0%;
+        font-size: 1.4rem;
+        padding-right: 50%;
     }
 
     .btn {
@@ -140,20 +155,52 @@ hr,
 
     }
 
+    .carousel-caption {
+        z-index: 3;
+    }
+
+
+
+
 }
 
-@media (min-width:320px) {
+@media (max-width: 480px) {
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+        padding-right: 10%;
+    }
 
 
 
     .Whiteblue-overlay {
-        left: 0;
+        left: -100%;
+        width: 1200px;
+
     }
+
+
 
     .btn {
         padding-right: 20px;
         padding-left: 20px;
         font-size: 1.8rem;
+
+    }
+
+    .carousel-caption {
+        top: 290px;
+    }
+
+    .btn {
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 1.2rem;
+        font-weight: 700;
 
     }
 
